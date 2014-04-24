@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111548171908E4B70095576E /* NSThread+RHBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 111547FF1908E4B70095576E /* NSThread+RHBlockAdditions.m */; };
+		111548181908E4B70095576E /* RHAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548021908E4B70095576E /* RHAddressBook.m */; };
+		111548191908E4B70095576E /* RHAddressBookGeoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548051908E4B70095576E /* RHAddressBookGeoResult.m */; };
+		1115481A1908E4B70095576E /* RHAddressBookSharedServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548071908E4B70095576E /* RHAddressBookSharedServices.m */; };
+		1115481B1908E4B70095576E /* RHAddressBookThreadMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548091908E4B70095576E /* RHAddressBookThreadMain.m */; };
+		1115481C1908E4B70095576E /* RHGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115480C1908E4B70095576E /* RHGroup.m */; };
+		1115481D1908E4B70095576E /* RHMultiValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115480E1908E4B70095576E /* RHMultiValue.m */; };
+		1115481E1908E4B70095576E /* RHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548101908E4B70095576E /* RHPerson.m */; };
+		1115481F1908E4B70095576E /* RHRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548131908E4B70095576E /* RHRecord.m */; };
+		111548201908E4B70095576E /* RHSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548161908E4B70095576E /* RHSource.m */; };
+		111548231908E9C60095576E /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548221908E9C60095576E /* ContactTableViewCell.m */; };
 		11D3745C1908B9D900B59504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745B1908B9D900B59504 /* Foundation.framework */; };
 		11D3745E1908B9D900B59504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745D1908B9D900B59504 /* CoreGraphics.framework */; };
 		11D374601908B9D900B59504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745F1908B9D900B59504 /* UIKit.framework */; };
@@ -15,14 +26,15 @@
 		11D3746C1908B9D900B59504 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D3746B1908B9D900B59504 /* AppDelegate.m */; };
 		11D3746F1908B9D900B59504 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D3746D1908B9D900B59504 /* Main_iPhone.storyboard */; };
 		11D374721908B9D900B59504 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D374701908B9D900B59504 /* Main_iPad.storyboard */; };
-		11D374751908B9D900B59504 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D374741908B9D900B59504 /* MasterViewController.m */; };
-		11D374781908B9D900B59504 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D374771908B9D900B59504 /* DetailViewController.m */; };
+		11D374751908B9D900B59504 /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D374741908B9D900B59504 /* ContactsListViewController.m */; };
 		11D3747A1908B9D900B59504 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D374791908B9D900B59504 /* Images.xcassets */; };
 		11D374811908B9D900B59504 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D374801908B9D900B59504 /* XCTest.framework */; };
 		11D374821908B9D900B59504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745B1908B9D900B59504 /* Foundation.framework */; };
 		11D374831908B9D900B59504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745F1908B9D900B59504 /* UIKit.framework */; };
 		11D3748B1908B9D900B59504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11D374891908B9D900B59504 /* InfoPlist.strings */; };
 		11D3748D1908B9D900B59504 /* AddressBookExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D3748C1908B9D900B59504 /* AddressBookExampleTests.m */; };
+		3E297F8D2A9F415086DA3B9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 343251F7AEC846959D622FB3 /* libPods.a */; };
+		DDE7305B3D3F48499905C712 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 343251F7AEC846959D622FB3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111547FD1908E4B70095576E /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
+		111547FE1908E4B70095576E /* NSThread+RHBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+RHBlockAdditions.h"; sourceTree = "<group>"; };
+		111547FF1908E4B70095576E /* NSThread+RHBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+RHBlockAdditions.m"; sourceTree = "<group>"; };
+		111548001908E4B70095576E /* RHAddressBook-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RHAddressBook-Prefix.pch"; sourceTree = "<group>"; };
+		111548011908E4B70095576E /* RHAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAddressBook.h; sourceTree = "<group>"; };
+		111548021908E4B70095576E /* RHAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAddressBook.m; sourceTree = "<group>"; };
+		111548031908E4B70095576E /* RHAddressBook_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAddressBook_Private.h; sourceTree = "<group>"; };
+		111548041908E4B70095576E /* RHAddressBookGeoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAddressBookGeoResult.h; sourceTree = "<group>"; };
+		111548051908E4B70095576E /* RHAddressBookGeoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAddressBookGeoResult.m; sourceTree = "<group>"; };
+		111548061908E4B70095576E /* RHAddressBookSharedServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAddressBookSharedServices.h; sourceTree = "<group>"; };
+		111548071908E4B70095576E /* RHAddressBookSharedServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAddressBookSharedServices.m; sourceTree = "<group>"; };
+		111548081908E4B70095576E /* RHAddressBookThreadMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAddressBookThreadMain.h; sourceTree = "<group>"; };
+		111548091908E4B70095576E /* RHAddressBookThreadMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAddressBookThreadMain.m; sourceTree = "<group>"; };
+		1115480A1908E4B70095576E /* RHARCSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHARCSupport.h; sourceTree = "<group>"; };
+		1115480B1908E4B70095576E /* RHGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHGroup.h; sourceTree = "<group>"; };
+		1115480C1908E4B70095576E /* RHGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHGroup.m; sourceTree = "<group>"; };
+		1115480D1908E4B70095576E /* RHMultiValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHMultiValue.h; sourceTree = "<group>"; };
+		1115480E1908E4B70095576E /* RHMultiValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHMultiValue.m; sourceTree = "<group>"; };
+		1115480F1908E4B70095576E /* RHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPerson.h; sourceTree = "<group>"; };
+		111548101908E4B70095576E /* RHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHPerson.m; sourceTree = "<group>"; };
+		111548111908E4B70095576E /* RHPersonLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHPersonLabels.h; sourceTree = "<group>"; };
+		111548121908E4B70095576E /* RHRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHRecord.h; sourceTree = "<group>"; };
+		111548131908E4B70095576E /* RHRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHRecord.m; sourceTree = "<group>"; };
+		111548141908E4B70095576E /* RHRecord_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHRecord_Private.h; sourceTree = "<group>"; };
+		111548151908E4B70095576E /* RHSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSource.h; sourceTree = "<group>"; };
+		111548161908E4B70095576E /* RHSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSource.m; sourceTree = "<group>"; };
+		111548211908E9C60095576E /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		111548221908E9C60095576E /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
 		11D374581908B9D900B59504 /* AddressBookExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D3745B1908B9D900B59504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11D3745D1908B9D900B59504 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,16 +88,16 @@
 		11D3746B1908B9D900B59504 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		11D3746E1908B9D900B59504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		11D374711908B9D900B59504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		11D374731908B9D900B59504 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		11D374741908B9D900B59504 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		11D374761908B9D900B59504 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		11D374771908B9D900B59504 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		11D374731908B9D900B59504 /* ContactsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		11D374741908B9D900B59504 /* ContactsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
 		11D374791908B9D900B59504 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11D3747F1908B9D900B59504 /* AddressBookExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D374801908B9D900B59504 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		11D374881908B9D900B59504 /* AddressBookExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AddressBookExampleTests-Info.plist"; sourceTree = "<group>"; };
 		11D3748A1908B9D900B59504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11D3748C1908B9D900B59504 /* AddressBookExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookExampleTests.m; sourceTree = "<group>"; };
+		343251F7AEC846959D622FB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +108,7 @@
 				11D3745E1908B9D900B59504 /* CoreGraphics.framework in Frameworks */,
 				11D374601908B9D900B59504 /* UIKit.framework in Frameworks */,
 				11D3745C1908B9D900B59504 /* Foundation.framework in Frameworks */,
+				3E297F8D2A9F415086DA3B9F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,19 +119,55 @@
 				11D374811908B9D900B59504 /* XCTest.framework in Frameworks */,
 				11D374831908B9D900B59504 /* UIKit.framework in Frameworks */,
 				11D374821908B9D900B59504 /* Foundation.framework in Frameworks */,
+				DDE7305B3D3F48499905C712 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111547FC1908E4B70095576E /* RHAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				111547FD1908E4B70095576E /* AddressBook.h */,
+				111547FE1908E4B70095576E /* NSThread+RHBlockAdditions.h */,
+				111547FF1908E4B70095576E /* NSThread+RHBlockAdditions.m */,
+				111548001908E4B70095576E /* RHAddressBook-Prefix.pch */,
+				111548011908E4B70095576E /* RHAddressBook.h */,
+				111548021908E4B70095576E /* RHAddressBook.m */,
+				111548031908E4B70095576E /* RHAddressBook_Private.h */,
+				111548041908E4B70095576E /* RHAddressBookGeoResult.h */,
+				111548051908E4B70095576E /* RHAddressBookGeoResult.m */,
+				111548061908E4B70095576E /* RHAddressBookSharedServices.h */,
+				111548071908E4B70095576E /* RHAddressBookSharedServices.m */,
+				111548081908E4B70095576E /* RHAddressBookThreadMain.h */,
+				111548091908E4B70095576E /* RHAddressBookThreadMain.m */,
+				1115480A1908E4B70095576E /* RHARCSupport.h */,
+				1115480B1908E4B70095576E /* RHGroup.h */,
+				1115480C1908E4B70095576E /* RHGroup.m */,
+				1115480D1908E4B70095576E /* RHMultiValue.h */,
+				1115480E1908E4B70095576E /* RHMultiValue.m */,
+				1115480F1908E4B70095576E /* RHPerson.h */,
+				111548101908E4B70095576E /* RHPerson.m */,
+				111548111908E4B70095576E /* RHPersonLabels.h */,
+				111548121908E4B70095576E /* RHRecord.h */,
+				111548131908E4B70095576E /* RHRecord.m */,
+				111548141908E4B70095576E /* RHRecord_Private.h */,
+				111548151908E4B70095576E /* RHSource.h */,
+				111548161908E4B70095576E /* RHSource.m */,
+			);
+			path = RHAddressBook;
+			sourceTree = "<group>";
+		};
 		11D3744F1908B9D900B59504 = {
 			isa = PBXGroup;
 			children = (
+				111547FC1908E4B70095576E /* RHAddressBook */,
 				11D374611908B9D900B59504 /* AddressBookExample */,
 				11D374861908B9D900B59504 /* AddressBookExampleTests */,
 				11D3745A1908B9D900B59504 /* Frameworks */,
 				11D374591908B9D900B59504 /* Products */,
+				B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +187,7 @@
 				11D3745D1908B9D900B59504 /* CoreGraphics.framework */,
 				11D3745F1908B9D900B59504 /* UIKit.framework */,
 				11D374801908B9D900B59504 /* XCTest.framework */,
+				343251F7AEC846959D622FB3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,10 +199,10 @@
 				11D3746B1908B9D900B59504 /* AppDelegate.m */,
 				11D3746D1908B9D900B59504 /* Main_iPhone.storyboard */,
 				11D374701908B9D900B59504 /* Main_iPad.storyboard */,
-				11D374731908B9D900B59504 /* MasterViewController.h */,
-				11D374741908B9D900B59504 /* MasterViewController.m */,
-				11D374761908B9D900B59504 /* DetailViewController.h */,
-				11D374771908B9D900B59504 /* DetailViewController.m */,
+				11D374731908B9D900B59504 /* ContactsListViewController.h */,
+				11D374741908B9D900B59504 /* ContactsListViewController.m */,
+				111548211908E9C60095576E /* ContactTableViewCell.h */,
+				111548221908E9C60095576E /* ContactTableViewCell.m */,
 				11D374791908B9D900B59504 /* Images.xcassets */,
 				11D374621908B9D900B59504 /* Supporting Files */,
 			);
@@ -167,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D374901908B9D900B59504 /* Build configuration list for PBXNativeTarget "AddressBookExample" */;
 			buildPhases = (
+				B9027230FCF841F8AC1BDBBD /* Check Pods Manifest.lock */,
 				11D374541908B9D900B59504 /* Sources */,
 				11D374551908B9D900B59504 /* Frameworks */,
 				11D374561908B9D900B59504 /* Resources */,
+				54787B4CB84543C2A09D4F11 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D374931908B9D900B59504 /* Build configuration list for PBXNativeTarget "AddressBookExampleTests" */;
 			buildPhases = (
+				21FB823A904248A38CB4A407 /* Check Pods Manifest.lock */,
 				11D3747B1908B9D900B59504 /* Sources */,
 				11D3747C1908B9D900B59504 /* Frameworks */,
 				11D3747D1908B9D900B59504 /* Resources */,
+				A14B57B962264A249EB598A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,15 +335,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21FB823A904248A38CB4A407 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54787B4CB84543C2A09D4F11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A14B57B962264A249EB598A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9027230FCF841F8AC1BDBBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11D374541908B9D900B59504 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111548171908E4B70095576E /* NSThread+RHBlockAdditions.m in Sources */,
 				11D3746C1908B9D900B59504 /* AppDelegate.m in Sources */,
-				11D374751908B9D900B59504 /* MasterViewController.m in Sources */,
+				111548231908E9C60095576E /* ContactTableViewCell.m in Sources */,
+				111548181908E4B70095576E /* RHAddressBook.m in Sources */,
+				11D374751908B9D900B59504 /* ContactsListViewController.m in Sources */,
+				111548191908E4B70095576E /* RHAddressBookGeoResult.m in Sources */,
+				1115481A1908E4B70095576E /* RHAddressBookSharedServices.m in Sources */,
+				1115481D1908E4B70095576E /* RHMultiValue.m in Sources */,
+				1115481E1908E4B70095576E /* RHPerson.m in Sources */,
 				11D374681908B9D900B59504 /* main.m in Sources */,
-				11D374781908B9D900B59504 /* DetailViewController.m in Sources */,
+				1115481F1908E4B70095576E /* RHRecord.m in Sources */,
+				1115481B1908E4B70095576E /* RHAddressBookThreadMain.m in Sources */,
+				111548201908E4B70095576E /* RHSource.m in Sources */,
+				1115481C1908E4B70095576E /* RHGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +548,7 @@
 		};
 		11D374911908B9D900B59504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -406,6 +562,7 @@
 		};
 		11D374921908B9D900B59504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -419,6 +576,7 @@
 		};
 		11D374941908B9D900B59504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AddressBookExample.app/AddressBookExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -441,6 +599,7 @@
 		};
 		11D374951908B9D900B59504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60097A7BCAB4A74AC65EAF6 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AddressBookExample.app/AddressBookExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -476,6 +635,7 @@
 				11D374921908B9D900B59504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11D374931908B9D900B59504 /* Build configuration list for PBXNativeTarget "AddressBookExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +644,7 @@
 				11D374951908B9D900B59504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
