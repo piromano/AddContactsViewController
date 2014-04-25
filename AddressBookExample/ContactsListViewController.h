@@ -11,7 +11,7 @@
 typedef void(^AddContactsBlock)(NSArray *addedPerson);
 
 
-@interface ContactsListViewController : UITableViewController<UISearchBarDelegate>
+@interface ContactsListViewController : UITableViewController<UISearchBarDelegate,UISearchDisplayDelegate>
 
 @property (nonatomic,copy)AddContactsBlock addPersonBlock;
 

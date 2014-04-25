@@ -18,6 +18,8 @@
 		1115481F1908E4B70095576E /* RHRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548131908E4B70095576E /* RHRecord.m */; };
 		111548201908E4B70095576E /* RHSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548161908E4B70095576E /* RHSource.m */; };
 		111548231908E9C60095576E /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548221908E9C60095576E /* ContactTableViewCell.m */; };
+		119696A61909FF67002744BC /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 119696A41909FF67002744BC /* SearchTableViewCell.m */; };
+		119696A71909FF67002744BC /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119696A51909FF67002744BC /* SearchTableViewCell.xib */; };
 		11D3745C1908B9D900B59504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745B1908B9D900B59504 /* Foundation.framework */; };
 		11D3745E1908B9D900B59504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745D1908B9D900B59504 /* CoreGraphics.framework */; };
 		11D374601908B9D900B59504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745F1908B9D900B59504 /* UIKit.framework */; };
@@ -76,6 +78,9 @@
 		111548161908E4B70095576E /* RHSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSource.m; sourceTree = "<group>"; };
 		111548211908E9C60095576E /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
 		111548221908E9C60095576E /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		119696A31909FF67002744BC /* SearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		119696A41909FF67002744BC /* SearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		119696A51909FF67002744BC /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		11D374581908B9D900B59504 /* AddressBookExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D3745B1908B9D900B59504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11D3745D1908B9D900B59504 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +208,9 @@
 				11D374741908B9D900B59504 /* ContactsListViewController.m */,
 				111548211908E9C60095576E /* ContactTableViewCell.h */,
 				111548221908E9C60095576E /* ContactTableViewCell.m */,
+				119696A31909FF67002744BC /* SearchTableViewCell.h */,
+				119696A41909FF67002744BC /* SearchTableViewCell.m */,
+				119696A51909FF67002744BC /* SearchTableViewCell.xib */,
 				11D374791908B9D900B59504 /* Images.xcassets */,
 				11D374621908B9D900B59504 /* Supporting Files */,
 			);
@@ -322,6 +330,7 @@
 				11D3747A1908B9D900B59504 /* Images.xcassets in Resources */,
 				11D3746F1908B9D900B59504 /* Main_iPhone.storyboard in Resources */,
 				11D374661908B9D900B59504 /* InfoPlist.strings in Resources */,
+				119696A71909FF67002744BC /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +426,7 @@
 				1115481B1908E4B70095576E /* RHAddressBookThreadMain.m in Sources */,
 				111548201908E4B70095576E /* RHSource.m in Sources */,
 				1115481C1908E4B70095576E /* RHGroup.m in Sources */,
+				119696A61909FF67002744BC /* SearchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

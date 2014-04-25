@@ -8,7 +8,7 @@
 
 #import "ContactsListViewController.h"
 #import "ContactTableViewCell.h"
-
+#import "SearchTableViewCell.h"
 #import "AddressBook.h"
 
 @interface ContactsListViewController () {
@@ -16,7 +16,12 @@
     __weak IBOutlet UISearchBar *searchbar;
     
     NSMutableArray *_addedPerson;
+    
+    NSArray *_allPeople;
 }
+
+@property (nonatomic) NSArray *searchResults;
+
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @property (nonatomic) NSMutableArray *sections;
@@ -49,10 +54,12 @@
     
     _addressBook = [[RHAddressBook alloc] init];
     
-    NSArray *allPeople = [_addressBook people];
+     _allPeople = [_addressBook people];
     
-    [self setObjects:allPeople];
+    [self setObjects:_allPeople];
 
+    
+    [self.searchDisplayController.searchResultsTableView registerNib:[UINib nibWithNibName:@"SearchTableViewCell" bundle:nil] forCellReuseIdentifier:@"SearchCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,40 +68,96 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
 
+    _searchResults = [_allPeople filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self.name CONTAINS[cd] %@",searchString]];
+    return YES;
+}
+
+- (void)searchDisplayController:(UISearchDisplayController *)controller didHideSearchResultsTableView:(UITableView *)tableView{
+    _searchResults = nil;
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return _sections.count;
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        return 1;
+    }
+	else
+	{
+        return _sections.count;
+    }
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_sections[section] count];
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        return _searchResults.count;
+    }
+	else
+	{
+        return [_sections[section] count];
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *returnCell;
+    
+    if (tableView==self.searchDisplayController.searchResultsTableView) {
+        SearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchCell" forIndexPath:indexPath];
+        
+        RHPerson *person =  _searchResults[indexPath.row];
+        
+        cell.added = [_addedPerson containsObject:person];
+        
+        cell.nameLabel.text = [person name];
+        
+        returnCell = cell;
+    }else{
+        ContactTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+        
+        RHPerson *person =  _sections[indexPath.section][indexPath.row];
+        
+        cell.added = [_addedPerson containsObject:person];
+        
+        cell.nameLabel.text = [person name];
+        
+        returnCell = cell;
+    }
 
-    RHPerson *person =  _sections[indexPath.section][indexPath.row];
     
-    cell.added = [_addedPerson containsObject:person];
-    
-    cell.nameLabel.text = [person name];
-    
-    return cell;
+    return returnCell;
 }
 
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    RHPerson *person;
+    if (tableView==self.searchDisplayController.searchResultsTableView) {
+        
+        person =  _searchResults[indexPath.row];
+        
+        [self.searchDisplayController setActive:NO animated:YES];
+
+    }else{
+        person =  _sections[indexPath.section][indexPath.row];
+    }
+    
+    
     ContactTableViewCell *cell = (ContactTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     
-    RHPerson *person =  _sections[indexPath.section][indexPath.row];
+    
     
     BOOL added = [_addedPerson containsObject:person];
     
@@ -118,6 +181,8 @@
         
         [self.navigationItem setRightBarButtonItem:nil];
     }
+    
+    
 }
 
 
@@ -154,15 +219,24 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [[[UILocalizedIndexedCollation currentCollation] sectionTitles] objectAtIndex:section];
+    if (self.searchDisplayController.searchResultsTableView!=tableView) {
+        return [[[UILocalizedIndexedCollation currentCollation] sectionTitles] objectAtIndex:section];
+    }
+    return nil;
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
+    if (self.searchDisplayController.searchResultsTableView!=tableView) {
+        return [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
+    }
+    return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
 {
-    return [[UILocalizedIndexedCollation currentCollation] sectionForSectionIndexTitleAtIndex:index];
+    if (self.searchDisplayController.searchResultsTableView!=tableView) {
+        return [[UILocalizedIndexedCollation currentCollation] sectionForSectionIndexTitleAtIndex:index];
+    }
+    return 0;
 }
 @end
