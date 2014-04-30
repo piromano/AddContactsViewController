@@ -17,6 +17,11 @@
 		1115481E1908E4B70095576E /* RHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548101908E4B70095576E /* RHPerson.m */; };
 		1115481F1908E4B70095576E /* RHRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548131908E4B70095576E /* RHRecord.m */; };
 		111548201908E4B70095576E /* RHSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 111548161908E4B70095576E /* RHSource.m */; };
+		118D6D2A1910AA3200CEED47 /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118D6D231910AA3200CEED47 /* ContactsListViewController.m */; };
+		118D6D2B1910AA3200CEED47 /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 118D6D251910AA3200CEED47 /* ContactTableViewCell.m */; };
+		118D6D2C1910AA3200CEED47 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 118D6D261910AA3200CEED47 /* README.md */; };
+		118D6D2D1910AA3200CEED47 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 118D6D281910AA3200CEED47 /* SearchTableViewCell.m */; };
+		118D6D2E1910AA3200CEED47 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118D6D291910AA3200CEED47 /* SearchTableViewCell.xib */; };
 		11D3745C1908B9D900B59504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745B1908B9D900B59504 /* Foundation.framework */; };
 		11D3745E1908B9D900B59504 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745D1908B9D900B59504 /* CoreGraphics.framework */; };
 		11D374601908B9D900B59504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3745F1908B9D900B59504 /* UIKit.framework */; };
@@ -72,6 +77,14 @@
 		111548141908E4B70095576E /* RHRecord_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHRecord_Private.h; sourceTree = "<group>"; };
 		111548151908E4B70095576E /* RHSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSource.h; sourceTree = "<group>"; };
 		111548161908E4B70095576E /* RHSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSource.m; sourceTree = "<group>"; };
+		118D6D221910AA3200CEED47 /* ContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		118D6D231910AA3200CEED47 /* ContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
+		118D6D241910AA3200CEED47 /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		118D6D251910AA3200CEED47 /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		118D6D261910AA3200CEED47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		118D6D271910AA3200CEED47 /* SearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		118D6D281910AA3200CEED47 /* SearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		118D6D291910AA3200CEED47 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		11D374581908B9D900B59504 /* AddressBookExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D3745B1908B9D900B59504 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11D3745D1908B9D900B59504 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,9 +166,25 @@
 			path = RHAddressBook;
 			sourceTree = "<group>";
 		};
+		118D6D211910AA3200CEED47 /* MobileContctsPicker */ = {
+			isa = PBXGroup;
+			children = (
+				118D6D221910AA3200CEED47 /* ContactsListViewController.h */,
+				118D6D231910AA3200CEED47 /* ContactsListViewController.m */,
+				118D6D241910AA3200CEED47 /* ContactTableViewCell.h */,
+				118D6D251910AA3200CEED47 /* ContactTableViewCell.m */,
+				118D6D261910AA3200CEED47 /* README.md */,
+				118D6D271910AA3200CEED47 /* SearchTableViewCell.h */,
+				118D6D281910AA3200CEED47 /* SearchTableViewCell.m */,
+				118D6D291910AA3200CEED47 /* SearchTableViewCell.xib */,
+			);
+			path = MobileContctsPicker;
+			sourceTree = "<group>";
+		};
 		11D3744F1908B9D900B59504 = {
 			isa = PBXGroup;
 			children = (
+				118D6D211910AA3200CEED47 /* MobileContctsPicker */,
 				111547FC1908E4B70095576E /* RHAddressBook */,
 				11D374611908B9D900B59504 /* AddressBookExample */,
 				11D374861908B9D900B59504 /* AddressBookExampleTests */,
@@ -310,8 +339,10 @@
 			files = (
 				11D374721908B9D900B59504 /* Main_iPad.storyboard in Resources */,
 				11D3747A1908B9D900B59504 /* Images.xcassets in Resources */,
+				118D6D2C1910AA3200CEED47 /* README.md in Resources */,
 				11D3746F1908B9D900B59504 /* Main_iPhone.storyboard in Resources */,
 				11D374661908B9D900B59504 /* InfoPlist.strings in Resources */,
+				118D6D2E1910AA3200CEED47 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +426,7 @@
 			files = (
 				111548171908E4B70095576E /* NSThread+RHBlockAdditions.m in Sources */,
 				11D3746C1908B9D900B59504 /* AppDelegate.m in Sources */,
+				118D6D2B1910AA3200CEED47 /* ContactTableViewCell.m in Sources */,
 				111548181908E4B70095576E /* RHAddressBook.m in Sources */,
 				111548191908E4B70095576E /* RHAddressBookGeoResult.m in Sources */,
 				1115481A1908E4B70095576E /* RHAddressBookSharedServices.m in Sources */,
@@ -405,6 +437,8 @@
 				1115481B1908E4B70095576E /* RHAddressBookThreadMain.m in Sources */,
 				111548201908E4B70095576E /* RHSource.m in Sources */,
 				1115481C1908E4B70095576E /* RHGroup.m in Sources */,
+				118D6D2A1910AA3200CEED47 /* ContactsListViewController.m in Sources */,
+				118D6D2D1910AA3200CEED47 /* SearchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

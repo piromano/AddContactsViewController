@@ -1,0 +1,3 @@
+[submodule "MobileContctsPicker"]
+	path = MobileContctsPicker
+	url = https://github.com/Uriphium/MobileContactsPicker.git
